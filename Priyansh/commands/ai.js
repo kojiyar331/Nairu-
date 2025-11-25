@@ -1,13 +1,13 @@
 const axios = require("axios");
 
 module.exports.config = {
-  name: "affu",
+  name: "taha",
   version: "2.0.2",
   hasPermssion: 0,
   credits: "Raj",
   description: "Naughty AI boyfriend affu",
   commandCategory: "ai",
-  usages: "affu",
+  usages: "taha",
   cooldowns: 2
 };
 
@@ -16,7 +16,7 @@ module.exports.handleEvent = async function({ api, event }) {
 
   global.affuSessions = global.affuSessions || {};
 
-  // STEP 1: Trigger "affu"
+  // STEP 1: Trigger "Taha"
   if (body && body.trim().toLowerCase() === "taha") {
     global.affuSessions[threadID] = true;
     return api.sendMessage("Bolo jaanu 😏 kya haal hai?", threadID, messageID);
